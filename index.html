@@ -36,45 +36,21 @@ function d() {
   var number=fn/sn;
   document.getElementById("finalnumber").innerHTML=number;
 }
-function a2() { 
-  var fn=Math.floor(document.getElementById("fn").value);
-  var sn=Math.floor(document.getElementById("sn").value);
-  var number=sn-fn;
-  document.getElementById("finalnumber2").innerHTML=number;
-}
-function s2() { 
-  var fn=Math.floor(document.getElementById("fn").value);
-  var sn=Math.floor(document.getElementById("sn").value);
-  var number=sn+fn;
-  document.getElementById("finalnumber2").innerHTML=number;
-}
-function m2() { 
-  var fn=Math.floor(document.getElementById("fn").value);
-  var sn=Math.floor(document.getElementById("sn").value);
-  var number=sn/fn;
-  document.getElementById("finalnumber2").innerHTML=number;
-}
-function d2() { 
-  var fn=Math.floor(document.getElementById("fn").value);
-  var sn=Math.floor(document.getElementById("sn").value);
-  var number=fn*sn;
-  document.getElementById("finalnumber2").innerHTML=number;
-}
    function a2() { 
-  var fn=Math.floor(document.getElementById("fn").value);
-  var sn=Math.floor(document.getElementById("sn").value);
+  var fn=Math.floor(document.getElementById("fn2").value);
+  var sn=Math.floor(document.getElementById("sn2").value);
   var number=sn-fn;
   document.getElementById("finalnumber2").innerHTML=number;
 }
 function s2() { 
-  var fn=Math.floor(document.getElementById("fn").value);
-  var sn=Math.floor(document.getElementById("sn").value);
+  var fn=Math.floor(document.getElementById("fn2").value);
+  var sn=Math.floor(document.getElementById("sn2").value);
   var number=sn+fn;
   document.getElementById("finalnumber2").innerHTML=number;
 }
 function m2() { 
-  var fn=Math.floor(document.getElementById("fn").value);
-  var sn=Math.floor(document.getElementById("sn").value);
+  var fn=Math.floor(document.getElementById("fn2").value);
+  var sn=Math.floor(document.getElementById("sn2").value);
   var number=sn/fn;
   if(fn==0 && sn==0) { 
       document.getElementById("finalnumber2").innerHTML="0";
@@ -86,8 +62,8 @@ function m2() {
   }
 }
 function d2() { 
-  var fn=Math.floor(document.getElementById("fn").value);
-  var sn=Math.floor(document.getElementById("sn").value);
+  var fn=Math.floor(document.getElementById("fn2").value);
+  var sn=Math.floor(document.getElementById("sn2").value);
   var number=fn*sn;
   if(fn==0 && sn==0) { 
       document.getElementById("finalnumber2").innerHTML="0";
@@ -132,13 +108,13 @@ function d2() {
       <input type="button" onclick="d2()" value="/">
     </p>
     <p>
-     <input type="number" id="fn">
+     <input type="number" id="fn2">
     </p>
     <p>
      =
     </p>
     <p>
-     <input type="number" id="sn">
+     <input type="number" id="sn2">
     </p>
     <p id="finalnumber2">x Is Equal To </p>
     
