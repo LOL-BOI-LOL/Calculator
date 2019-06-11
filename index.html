@@ -34,7 +34,11 @@ function d() {
   var fn=Math.floor(document.getElementById("fn").value);
   var sn=Math.floor(document.getElementById("sn").value);
   var number=fn/sn;
+  if(fn==0 && sn==0) {
+  document.getElementById("finalnumber").innerHTML="0";
+  }else{
   document.getElementById("finalnumber").innerHTML=number;
+  }
 }
    function a2() { 
   var fn=Math.floor(document.getElementById("fn2").value);
