@@ -57,7 +57,7 @@ function m2() {
   var sn=Math.floor(document.getElementById("sn2").value);
   var number=sn/fn;
   if(fn==0 && sn==0) { 
-      document.getElementById("finalnumber2").innerHTML="Any Number";
+      document.getElementById("finalnumber2").innerHTML="Any Number Between Infinity and Negative Infinity";
   }else if(fn==0 || sn==0) {
       document.getElementById("finalnumber2").innerHTML="Invalid";
   }
@@ -103,24 +103,15 @@ function d2() {
     
     <p>
      x
-    </p>
-    <p>
       <input type="button" onclick="a2()" value="+">
       <input type="button" onclick="s2()" value="-">
       <input type="button" onclick="m2()" value="*">
       <input type="button" onclick="d2()" value="/">
-    </p>
-    <p>
      <input type="number" id="fn2">
-    </p>
-    <p>
      =
-    </p>
-    <p>
      <input type="number" id="sn2">
     </p>
-    <p id="finalnumber2">x Is Equal To </p>
-    
+    <p id="finalnumber2">x Is Equal To</p>  
   </body>
   
 </html>
