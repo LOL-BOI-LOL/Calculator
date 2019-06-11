@@ -60,7 +60,44 @@ function d2() {
   var number=fn*sn;
   document.getElementById("finalnumber2").innerHTML=number;
 }
-   
+   function a2() { 
+  var fn=Math.floor(document.getElementById("fn").value);
+  var sn=Math.floor(document.getElementById("sn").value);
+  var number=sn-fn;
+  document.getElementById("finalnumber2").innerHTML=number;
+}
+function s2() { 
+  var fn=Math.floor(document.getElementById("fn").value);
+  var sn=Math.floor(document.getElementById("sn").value);
+  var number=sn+fn;
+  document.getElementById("finalnumber2").innerHTML=number;
+}
+function m2() { 
+  var fn=Math.floor(document.getElementById("fn").value);
+  var sn=Math.floor(document.getElementById("sn").value);
+  var number=sn/fn;
+  if(fn==0 && sn==0) { 
+      document.getElementById("finalnumber2").innerHTML="0";
+  }else if(fn==0 || sn==0) {
+      document.getElementById("finalnumber2").innerHTML="Invalid";
+  }
+  if(fn > 0) {
+    document.getElementById("finalnumber2").innerHTML=number;
+  }
+}
+function d2() { 
+  var fn=Math.floor(document.getElementById("fn").value);
+  var sn=Math.floor(document.getElementById("sn").value);
+  var number=fn*sn;
+  if(fn==0 && sn==0) { 
+      document.getElementById("finalnumber2").innerHTML="0";
+  }else if(fn==0 || sn==0) {
+      document.getElementById("finalnumber2").innerHTML="Invalid";
+  }
+  if(fn > 0) {
+    document.getElementById("finalnumber2").innerHTML=number;
+  }
+}
 </script>
  
     <p>
@@ -83,23 +120,25 @@ function d2() {
     
     <p id="finalnumber"></p>
     
- <p>
+    <p></p>
+    
+    <p>
      x
     </p>
     <p>
-      <input type="button" onclick="a2()" value="Addition">
-      <input type="button" onclick="s2()" value="Subtraction">
-      <input type="button" onclick="m2()" value="Multiplication">
-      <input type="button" onclick="d2()" value="Division">
+      <input type="button" onclick="a2()" value="+">
+      <input type="button" onclick="s2()" value="-">
+      <input type="button" onclick="m2()" value="*">
+      <input type="button" onclick="d2()" value="/">
     </p>
     <p>
-     <input type="number" value="0" id="fn">
+     <input type="number" id="fn">
     </p>
     <p>
      =
     </p>
     <p>
-     <input type="number" value="0" id="sn">
+     <input type="number" id="sn">
     </p>
     <p id="finalnumber2">x Is Equal To </p>
     
