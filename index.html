@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+  
+    <title>Calculator</title>
+    
+  </head>
+  
+  <body>
+ 
+ <script>
+
+function a() { 
+  var fn=Math.floor(document.getElementById("fn").value);
+  var sn=Math.floor(document.getElementById("sn").value);
+  var number=fn+sn;
+  document.getElementById("finalnumber").innerHTML=number;
+}
+function s() { 
+  var fn=Math.floor(document.getElementById("fn").value);
+  var sn=Math.floor(document.getElementById("sn").value);
+  var number=fn-sn;
+  document.getElementById("finalnumber").innerHTML=number;
+}
+function m() { 
+  var fn=Math.floor(document.getElementById("fn").value);
+  var sn=Math.floor(document.getElementById("sn").value);
+  var number=fn*sn;
+  document.getElementById("finalnumber").innerHTML=number;
+}
+function d() { 
+  var fn=Math.floor(document.getElementById("fn").value);
+  var sn=Math.floor(document.getElementById("sn").value);
+  var number=fn/sn;
+  document.getElementById("finalnumber").innerHTML=number;
+}
+
+</script>
+ 
+    <p>
+    
+      <input type="number" value="0" id="fn">       <input type="number" value="0" id="sn">
+      
+    </p>
+    
+    <p>
+    
+      <input type="button" onclick="a" value="Addition">
+      
+      <input type="button" onclick="s" value="Subtraction">
+      
+      <input type="button" onclick="m" value="Multiplication">
+      
+      <input type="button" onclick="d" value="Division">
+      
+    </p>
+    
+    <p id="finalnumber"></p>
+    
+  </body>
+  
+</html>
