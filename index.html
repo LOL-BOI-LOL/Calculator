@@ -83,6 +83,15 @@ function ec() {
   var fn = Math.pow(bn, en); 
   document.getElementById("fn123").innerHTML=fn;
 }
+function sFact()
+{
+  var num=document.getElementById("thenumber").value;
+  var rval=1;
+  for (var i = 2; i <= num; i++) {
+   rval = rval * i; 
+  }
+  document.getElementById("NN").innerHTML=rval;
+}
 </script>
 
     <p>
@@ -130,6 +139,12 @@ function ec() {
       <input type="button" onclick="ec()" value="">
     </p>
     <p id="fn123"></p>
+    <p>
+      Factorial of
+      <input type="number" value="0" id="thenumber">
+      <input type="button" onclick="sFact()" value="">
+    </p>
+    <p id="NN"></p>
   </body>
   
 </html>
