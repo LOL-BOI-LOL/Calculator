@@ -77,6 +77,12 @@ function d2() {
     document.getElementById("finalnumber2").innerHTML=number;
   }
 }
+function ec() { 
+  var bn = document.getElementById("bn").value;
+  var en = document.getElementById("en").value;
+  var fn = Math.pow(bn, en); 
+  document.getElementById("fn123").innerHTML=fn;
+}
 </script>
 
     <p>
@@ -116,6 +122,14 @@ function d2() {
      <input type="number" value="0" id="sn2">
     </p>
     <p id="finalnumber2"></p>  
+        <p>
+      Exponent Calculator:
+      <input type="number" value="0" id="bn">
+      To The
+      <input type="number" value="0" id="en">
+      <input type="button" onclick="ec()" value="">
+    </p>
+    <p id="fn123"></p>
   </body>
   
 </html>
