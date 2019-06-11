@@ -34,8 +34,8 @@ function d() {
   var fn=Math.floor(document.getElementById("fn").value);
   var sn=Math.floor(document.getElementById("sn").value);
   var number=fn/sn;
-  if(fn==0 && sn==0) {
-  document.getElementById("finalnumber").innerHTML="0";
+  if(sn==0) {
+  document.getElementById("finalnumber").innerHTML="Invalid";
   }else{
   document.getElementById("finalnumber").innerHTML=number;
   }
@@ -69,12 +69,11 @@ function d2() {
   var fn=Math.floor(document.getElementById("fn2").value);
   var sn=Math.floor(document.getElementById("sn2").value);
   var number=fn*sn;
-  if(fn==0 && sn==0) { 
-      document.getElementById("finalnumber2").innerHTML="0";
-  }else if(fn==0 || sn==0) {
+  if(fn==0) { 
       document.getElementById("finalnumber2").innerHTML="Invalid";
-  }
-  if(fn > 0) {
+  }else if(sn == 0 && fn != 0) {
+      document.getElementById("finalnumber2").innerHTML="0";
+  }else if(fn > 0) {
     document.getElementById("finalnumber2").innerHTML=number;
   }
 }
